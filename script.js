@@ -1,9 +1,4 @@
-document.querySelector('.order-button').addEventListener('click', function() {
-  // Действия при нажатии на кнопку "Заказать"
-  console.log('Заказ оформлен');
-});
-
-function redirectToEmail() {
+document.querySelector('.order-button').addEventListener('click', function redirectToEmail() {
   var email = 'viktor@outlook.de';
   var cc = 'Rita@outlook.de';
   var subject = 'Beshtelung';
@@ -13,4 +8,7 @@ function redirectToEmail() {
     '&cc=' + encodeURIComponent(cc) + '&body=' + encodeURIComponent(body);
 
   window.location.href = mailtoLink;
-}
+} {
+  // Действия при нажатии на кнопку "Заказать"
+  console.log('Заказ оформлен');
+});
