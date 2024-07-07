@@ -63,3 +63,6 @@ body {
     flex-basis: 100%;
   }
 }
+.expand-text {
+  display: none;
+}
