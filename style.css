@@ -4,16 +4,21 @@ body {
   padding: 20px;
 }
 
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .product-card {
+  flex-basis: calc(50% - 20px);
   background-color: #fff;
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  margin-right: 20px; /* Добавлено расстояние между карточками по горизонтали */
-  margin-bottom: 20px; /* Добавлено расстояние между карточками по вертикали */
-  border-radius: 10px; /* Добавлено скругление углов карточек */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Добавлена тень вокруг карточек */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
@@ -43,4 +48,11 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+/* Медиа-запрос для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+  .product-card {
+    flex-basis: 100%;
+  }
 }
