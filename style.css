@@ -2,10 +2,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f1f1f1;
   padding: 20px;
-  display: flex;
-  justify-content: center; /* Выравнивание по горизонтали */
-  align-items: flex-start; /* Выравнивание по вертикали */
-  min-height: 100vh; /* Завернуть контент в минимальную высоту экрана */
 }
 
 .product-container {
